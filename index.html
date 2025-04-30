@@ -549,25 +549,25 @@
         </section>
         <script>
             /**
- * Scrolls the page smoothly to the HTML element with the id 'form'.
- */
-function scrollToMyForm() {
-  // Find the element with the ID 'form'
-  const targetElement = document.getElementById('form');
+             * Scrolls the page smoothly to the HTML element with the id 'form'.
+            */
+            function scrollToMyForm() {
+            // Find the element with the ID 'form'
+            const targetElement = document.getElementById('form');
 
-  // Check if the element was actually found on the page
-  if (targetElement) {
-    // If found, scroll to it smoothly
-    targetElement.scrollIntoView({
-      behavior: 'smooth', // Use smooth scrolling animation
-      block: 'start'     // Align the top of the element with the top of the viewport
-    });
-  } else {
-    // Optional: Log a warning to the console if the element doesn't exist
-    // This helps with debugging if scrolling doesn't work.
-    console.warn("Scroll target not found: Element with id='form' does not exist.");
-  }
-}
+            // Check if the element was actually found on the page
+            if (targetElement) {
+                // If found, scroll to it smoothly
+                targetElement.scrollIntoView({
+                behavior: 'smooth', // Use smooth scrolling animation
+                block: 'start'     // Align the top of the element with the top of the viewport
+                });
+            } else {
+                // Optional: Log a warning to the console if the element doesn't exist
+                // This helps with debugging if scrolling doesn't work.
+                console.warn("Scroll target not found: Element with id='form' does not exist.");
+            }
+            }
         </script>
     </body>
 </html>
