@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en" class="__variable_9b9fd1 __variable_1ae611 __variable_ea17e2 translated-ltr">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Digital Marketing For Sales - Contact Us</title>
+    <link rel="stylesheet" href="files/64d765467b0b1408.css" data-precedence="next">
+    <link rel="stylesheet" href="files/e7eddfe4828c1690.css" data-precedence="next">
+    <link rel="stylesheet" href="files/0790578c0393d384.css" data-precedence="next">
+    <link rel="stylesheet" href="files/6e3590c0d5fdbfb7.css" data-precedence="next">
+    <link rel="stylesheet" href="files/69cc9dc15dfbf8b9.css" data-precedence="next">
+    <link rel="stylesheet" type="text/css" href="files/styles.css">
+    <link rel="icon" type="image/png" href="files/favicon.png" sizes="16x16">
+
+    <style>
+        /* Ensure the page takes up the full viewport height */
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Make the body a column flex container */
+        body {
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Let your main content (including the form and its "thank you" message) grow to fill available space */
+        main, section {
+            flex: 1;
+        }
+
+        /* Push the footer to the bottom */
+        footer {
+        /* If you already have a background or padding on your footer, leave them as-is */
+            margin-top: auto;
+            /* Optionally ensure it spans full width */
+            width: 100%;
+        }
+        @media only screen and (max-width: 1100px) {
+            .mob-cstm {
+                display: flex !important;
+                flex-direction: column !important;
+            }
+        }
+    </style>
+</head>
+
+<body class="bg-white dark:bg-gray-900 text-gray-800 dark:text-gray-200">
+
+    <!-- NAVIGATION -->
+    <nav id="navbar" class="w-full sticky top-0 border-b z-50 shadow-lg bg-white dark:bg-gray-900 border-gray-200 dark:border-gray-700">
+        <div class="max-w-screen-lg mx-auto flex items-center p-4">
+            <a href="index.html" class="flex items-center text-2xl font-semibold text-gray-900 dark:text-white">
+                <img src="files/logo.png" alt="Logo" title="Digital Marketing For Sales" class="h-12 w-auto" />
+            </a>
+        </div>
+    </nav>
+
+    <!-- PAGE BANNER -->
+    <section class="bg-gray-100 dark:bg-gray-800 py-10">
+        <div class="max-w-screen-lg mx-auto px-6">
+            <h1 class="text-4xl md:text-5xl font-black text-gray-900 dark:text-white">Contact Us</h1>
+        </div>
+    </section>
+
+    <!-- CONTACT FORM -->
+    <section class="py-12 px-6 md:px-8">
+        <div class="max-w-screen-lg mx-auto">
+            <h2 class="text-2xl font-bold dark:text-white mb-6">We’d love to hear from you</h2>
+            <form id="form" class="space-y-6">
+                <div>
+                    <label for="name" class="block mb-1 font-medium dark:text-gray-200">Your Name</label>
+                    <input type="text" id="name" name="name" required
+                        class="w-full p-3 border border-gray-300 rounded-lg bg-gray-50 text-gray-900 focus:border-blue-600 focus:ring-blue-600 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:focus:border-blue-400 dark:focus:ring-blue-400" />
+                </div>
+                <div>
+                    <label for="email" class="block mb-1 font-medium dark:text-gray-200">Email Address</label>
+                    <input type="email" id="email" name="email" required
+                        class="w-full p-3 border border-gray-300 rounded-lg bg-gray-50 text-gray-900 focus:border-blue-600 focus:ring-blue-600 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:focus:border-blue-400 dark:focus:ring-blue-400" />
+                </div>
+                <div>
+                    <label for="phone" class="block mb-1 font-medium dark:text-gray-200">Phone Number</label>
+                    <input type="tel" id="phone" name="phone"
+                        class="w-full p-3 border border-gray-300 rounded-lg bg-gray-50 text-gray-900 focus:border-blue-600 focus:ring-blue-600 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:focus:border-blue-400 dark:focus:ring-blue-400" />
+                </div>
+                <div>
+                    <label for="message" class="block mb-1 font-medium dark:text-gray-200">Your Message</label>
+                    <textarea id="message" name="message" rows="6" required
+                        class="w-full p-3 border border-gray-300 rounded-lg bg-gray-50 text-gray-900 focus:border-blue-600 focus:ring-blue-600 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:focus:border-blue-400 dark:focus:ring-blue-400"></textarea>
+                </div>
+                <div>
+                    <button type="submit"
+                        class="w-full py-3 font-medium text-white rounded-lg bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-800">
+                        Send Message
+                    </button>
+                </div>
+            </form>
+            <script>
+                document.getElementById("form").addEventListener("submit", function (e) {
+                  e.preventDefault();
+              
+                  // Show centered loading GIF
+                  document.getElementById("form").innerHTML = `
+                    <div style="
+                      display: flex;
+                      justify-content: center;
+                      align-items: center;
+                      min-height: 100px;
+                    ">
+                      <img src="files/loading.gif" width="80" alt="Loading…">
+                    </div>
+                  `;
+              
+                  setTimeout(() => {
+                    // Show centered thank-you message
+                    document.getElementById("form").innerHTML = `
+                      <p style="
+                        font-size: 18px;
+                        color: black;
+                        font-weight: 700;
+                        text-align: center;
+                        margin: 0;
+                      ">
+                        Thank you for registering with Digital Marketing For Sales. Our team will get in touch with you shortly to discuss your options.
+                      </p>
+                    `;
+                  }, 2000);
+                });
+            </script> 
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <section class="bg-gray-50 dark:bg-gray-800 py-8">
+        <footer class="max-w-screen-lg mx-auto text-gray-600 dark:text-gray-400 text-sm">
+            <div class="flex justify-between items-center mb-6 mob-cstm">
+                <a href="index.html" class="flex items-center text-2xl font-semibold text-gray-900 dark:text-white">
+                    <img src="files/logo.png" alt="Logo" class="h-12 w-auto" />
+                </a>
+                <ul class="flex space-x-6">
+                    <li><a href="about.html" class="hover:text-blue-600 dark:hover:text-blue-400">About Us</a></li>
+                    <li><a href="terms.html" class="hover:text-blue-600 dark:hover:text-blue-400">Terms &amp; Conditions</a></li>
+                    <li><a href="privacy.html" class="hover:text-blue-600 dark:hover:text-blue-400">Privacy Policy</a></li>
+                    <li><a href="contact.html" class="text-blue-600 dark:text-blue-400">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="text-center">
+                <p>
+                    Level 21, Menara Worldwide, Jalan Bukit Bintang, 50200 Kuala Lumpur, Wilayah Persekutuan Kuala Lumpur <br>
+                    SSM No: 1458721-W <br>
+                    Phone: +60 12-478 5109
+                </p>
+                <p class="mt-4">&copy; 2025 Digital Marketing For Sales. All rights reserved.</p>
+            </div>
+        </footer>
+    </section>
+
+</body>
+
+</html>
